@@ -1,3 +1,14 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/pointing.h>  // для сенсора
+#include <dt-bindings/gpio/gpio.h>     // для GPIO флагов
+#include <dt-bindings/pinctrl/nrf-pinctrl.h>  // для NRF_PSEL
+
+// Если компилятор ругается на неизвестные макросы:
+
+// #include <nordic/nrf52840_qiaa.dtsi>  // для определения пинов NRF52840
+// #include <dt-bindings/zmk/keys.h>      // для клавиш
+// #include <zephyr/types.h>               // для базовых типов
+
 /*
  * Шилд для мыши на Pro Micro NRF52840
  * - PMW3610 sensor
