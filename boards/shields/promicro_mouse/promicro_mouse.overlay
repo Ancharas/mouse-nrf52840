@@ -45,10 +45,10 @@
         zmk,matrix-transform = &default_transform;
     };
 
-    /*trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;*/
-    };
+    // trackball_listener {
+    //     compatible = "zmk,input-listener";
+    //     device = <&trackball>;
+    // };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
@@ -81,17 +81,17 @@
         >;
     };
 
-    /*wheel_encoder: encoder {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;   /* 2 или 4 в зависимости от энкодера */
-        status = "okay";
-    };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&wheel_encoder>;
-        triggers-per-rotation = <20>;
-    };*/
+    // wheel_encoder: encoder {
+    //     compatible = "alps,ec11";
+    //     a-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    //     b-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    //     resolution = <4>;
+    //     status = "okay";
+    // };
+    //
+    // sensors {
+    //     compatible = "zmk,keymap-sensors";
+    //     sensors = <&wheel_encoder>;
+    //     triggers-per-rotation = <20>;
+    // };
 };
