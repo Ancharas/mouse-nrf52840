@@ -1,3 +1,5 @@
 include:
   - board: nice_nano
     shield: promicro_mouse
+  - board: nice_nano
+    shield: corne_left
