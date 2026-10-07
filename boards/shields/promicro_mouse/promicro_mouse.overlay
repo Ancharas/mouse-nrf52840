@@ -28,7 +28,8 @@
     cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;   /* D3 */
 
     trackball: trackball@0 {
-        status = "okay";
+//        status = "okay";
+        status = "disabled";
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
@@ -44,9 +45,9 @@
         zmk,matrix-transform = &default_transform;
     };
 
-    trackball_listener {
+    /*trackball_listener {
         compatible = "zmk,input-listener";
-        device = <&trackball>;
+        device = <&trackball>;*/
     };
 
     kscan0: kscan {
@@ -80,7 +81,7 @@
         >;
     };
 
-    wheel_encoder: encoder {
+    /*wheel_encoder: encoder {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -92,5 +93,5 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&wheel_encoder>;
         triggers-per-rotation = <20>;
-    };
+    };*/
 };
